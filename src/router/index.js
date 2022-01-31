@@ -8,7 +8,12 @@ import About from "@/views/About.vue";
 
 const routes = [
   { path: "/", component: EventList, name: "EventList" },
-  { path: "/event/:id", component: EventDetails, name: "EventDetails" },
+  {
+    path: "/event/:id",
+    component: EventDetails,
+    name: "EventDetails",
+    props: true,
+  },
   { path: "/event/create", component: EventCreate, name: "EventCreate" },
   { path: "/about", component: About, name: "About" },
   { path: "/error/:/error", component: ErrorDisplay, name: "ErrorDisplay" },
