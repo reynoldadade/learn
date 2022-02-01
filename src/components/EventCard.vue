@@ -1,7 +1,7 @@
 <template>
-  <div class="p-2 rounded border-2 border-black text-red-500">
+  <div class="p-4 rounded border shadow" data-testid="event-card">
     <span>@{{ event.time }} on {{ event.date }}</span>
-    <h4>{{ event.title }}</h4>
+    <h4 class="font-semibold">{{ event.title }}</h4>
   </div>
 </template>
 
